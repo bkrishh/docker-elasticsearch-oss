@@ -16,13 +16,13 @@ This image uses [search-guard](https://github.com/floragunncom/search-guard) ins
 # How To Use
 
 ```
-docker run -d -p 9200:9200 -p 9300:9300 -e ELASTIC_PWD=changeme -e KIBANA_PWD=changeme  khezen/elasticsearch:latest   
+docker run -d -p 9200:9200 -p 9300:9300 -e ELASTIC_PWD=changeme -e KIBANA_PWD=changeme  valdemon/elasticsearch-oss:latest   
 ```
 ```
 version: '2'
 services:
     elasticsearch:
-        image: khezen/elasticsearch:5
+        image: valdemon/elasticsearch-oss:6.5.4-24.0
         environment:
             ELASTIC_PWD: changeme
             KIBANA_PWD: changeme
@@ -124,10 +124,10 @@ Keystore(private key storage) password.
 
 Configuration file is located in `/etc/elasticsearch/elasticsearch.yml` if you follow the same volume mapping as in the docker-compose example above.
 
-You can find default config [there](https://github.com/Khezen/docker-elasticsearch/blob/master/config/elasticsearch.yml).
+You can find default config [there](https://github.com/valdemon/docker-elasticsearch-oss/blob/master/config/elasticsearch.yml).
 
 You can find help with elasticsearch configuration [there](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html).
 
 # User Feedback
 ## Issues
-If you have any problems with or questions about this image, please ask for help through a [GitHub issue](https://github.com/Khezen/docker-elasticsearch/issues).
+If you have any problems with or questions about this image, please ask for help through a [GitHub issue](https://github.com/valdemon/docker-elasticsearch-oss/issues).
