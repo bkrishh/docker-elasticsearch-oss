@@ -7,9 +7,9 @@ ENV ES_TMPDIR "/tmp"
 ENV ES_VERSION 6.5.4
 ENV SG_VERSION "24.0"
 ENV DOWNLOAD_URL "https://artifacts.elastic.co/downloads/elasticsearch"
-ENV ES_TARBAL "${DOWNLOAD_URL}/elasticsearch-${ES_VERSION}.tar.gz"
-ENV ES_TARBALL_ASC "${DOWNLOAD_URL}/elasticsearch-${ES_VERSION}.tar.gz.asc"
-ENV GPG_KEY "46095ACC8548582C1A2699A9D27DMAINTAINER666CD88E42B4"
+ENV ES_TARBAL "${DOWNLOAD_URL}/elasticsearch-oss-${ES_VERSION}.tar.gz"
+ENV ES_TARBALL_ASC "${DOWNLOAD_URL}/elasticsearch-oss-${ES_VERSION}.tar.gz.asc"
+ENV GPG_KEY "D88E42B4"
 ENV PATH /elasticsearch/bin:$PATH
 
 # Install Elasticsearch.
@@ -22,7 +22,7 @@ RUN apk add --no-cache -t .build-deps gnupg \
   if [ "$ES_TARBALL_ASC" ]; then \
     curl -o elasticsearch.tar.gz.asc -Lskj "$ES_TARBALL_ASC"; \
     export GNUPGHOME="$(mktemp -d)"; \
-    gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; \
+    gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY"; \
     gpg --batch --verify elasticsearch.tar.gz.asc elasticsearch.tar.gz; \
     rm -r "$GNUPGHOME" elasticsearch.tar.gz.asc; \
   fi; \
