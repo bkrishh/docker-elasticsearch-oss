@@ -1,3 +1,7 @@
+> **NOTE**
+>
+> _This is a straight fork from the excellent [khezen/docker-elasticsearch](https://github.com/khezen/docker-elasticsearch) work. The main difference is usage of the [ES OSS distribution](https://www.elastic.co/downloads/elasticsearch-oss) instead of the [default one](https://www.elastic.co/downloads/elasticsearch)._
+
 # Supported tags and respective `Dockerfile` links
 
 * `5.6.3`,`5.6`, `5` [(5.6/Dockerfile)](https://github.com/Khezen/docker-elasticsearch/blob/5.6/Dockerfile)
