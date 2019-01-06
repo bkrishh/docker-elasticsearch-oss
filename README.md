@@ -4,7 +4,7 @@
 
 # Supported tags and respective `Dockerfile` links
 
-* `6.5.4`,`6.5`, `6`, `latest` [(6.5/Dockerfile)](https://github.com/Khezen/docker-elasticsearch/blob/6.5/Dockerfile)[![](https://images.microbadger.com/badges/image/khezen/elasticsearch.svg)](https://hub.docker.com/r/khezen/elasticsearch/)
+* [![GitHub (release)](https://img.shields.io/github/release/valdemon/docker-elasticsearch-oss.svg)](https://github.com/valdemon/docker-elasticsearch-oss/releases/latest) ![Tag](https://img.shields.io/badge/latest-yellowgreen.svg) [![](https://img.shields.io/badge/Dockerfile-darkred.svg)](https://github.com/valdemon/docker-elasticsearch-oss/blob/6.5.4-24.0/Dockerfile) [![](https://images.microbadger.com/badges/image/valdemon/elasticsearch-oss.svg)](https://microbadger.com/images/valdemon/elasticsearch-oss)
 
 # What is elasticsearch?
 
