@@ -1,17 +1,14 @@
 > **NOTE**
 >
-> _This is a straight fork from the excellent [khezen/docker-elasticsearch](https://github.com/khezen/docker-elasticsearch) work. The main difference is usage of the [ES OSS distribution](https://www.elastic.co/downloads/elasticsearch-oss) instead of the [default one](https://www.elastic.co/downloads/elasticsearch)._
+> _This project is forked from the excellent [khezen/docker-elasticsearch](https://github.com/khezen/docker-elasticsearch) & [valdemon/docker-elasticsearch-oss](https://github.com/valdemon/docker-elasticsearch-oss) work. The main difference is usage of the [ES OSS distribution](https://www.elastic.co/downloads/elasticsearch-oss) instead of the [default one](https://www.elastic.co/downloads/elasticsearch)._
 
-# Supported tags and respective `Dockerfile` links
-
-* [![GitHub (release)](https://img.shields.io/github/release/valdemon/docker-elasticsearch-oss.svg)](https://github.com/valdemon/docker-elasticsearch-oss/releases/latest) ![Tag](https://img.shields.io/badge/latest-yellowgreen.svg) [![](https://img.shields.io/badge/Dockerfile-darkred.svg)](https://github.com/valdemon/docker-elasticsearch-oss/blob/6.5.4-24.0/Dockerfile) [![](https://images.microbadger.com/badges/image/valdemon/elasticsearch-oss.svg)](https://microbadger.com/images/valdemon/elasticsearch-oss)
 
 # What is elasticsearch?
 
 Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.
 This image uses [search-guard](https://github.com/floragunncom/search-guard) instead of shield to handle trusted users.
 
-[<img src="https://static-www.elastic.co/fr/assets/blt9a26f88bfbd20eb5/icon-elasticsearch-bb.svg?q=802" width="144" height="144">](https://www.elastic.co/fr/products/elasticsearch)
+[<img src="https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt5ebe80fb665aef6b/5ea8c8f26b62d4563b6ecec2/brand-elasticsearch-220x130.svg" width="144" height="144">](https://www.elastic.co/elasticsearch/)
 
 # How To Use
 
@@ -124,10 +121,6 @@ Keystore(private key storage) password.
 
 Configuration file is located in `/etc/elasticsearch/elasticsearch.yml` if you follow the same volume mapping as in the docker-compose example above.
 
-You can find default config [there](https://github.com/valdemon/docker-elasticsearch-oss/blob/master/config/elasticsearch.yml).
+You can find default config [there](https://github.com/bkrish/docker-elasticsearch-oss/blob/master/config/elasticsearch.yml).
 
 You can find help with elasticsearch configuration [there](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html).
-
-# User Feedback
-## Issues
-If you have any problems with or questions about this image, please ask for help through a [GitHub issue](https://github.com/valdemon/docker-elasticsearch-oss/issues).
