@@ -121,6 +121,6 @@ Keystore(private key storage) password.
 
 Configuration file is located in `/etc/elasticsearch/elasticsearch.yml` if you follow the same volume mapping as in the docker-compose example above.
 
-You can find default config [there](https://github.com/bkrish/docker-elasticsearch-oss/blob/master/config/elasticsearch.yml).
+You can find default config [there](https://github.com/bkrishh/docker-elasticsearch-oss/blob/master/config/elasticsearch.yml).
 
 You can find help with elasticsearch configuration [there](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html).
